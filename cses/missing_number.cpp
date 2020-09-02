@@ -61,12 +61,12 @@ typedef long long ll;
 // O(n)
 int main()
 {
-  int n;
+  ll n;
   cin >> n;
 
   // O(1) 😂
   // the nth partial sum
-  int solution = n * (n + 1) / 2;
+  ll solution = n * (n + 1) / 2;
 
   // O(n) loop (read in the input)
   while (--n)
