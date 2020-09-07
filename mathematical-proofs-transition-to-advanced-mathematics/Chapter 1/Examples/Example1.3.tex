@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+\usepackage{enumitem, extsizes, amsfonts, braket, amsmath, ragged2e}
+\parindent=0pt
+
+\title{Example 1.3}
+\author{David Piper}
+
+\begin{document}
+  \maketitle
+
+  \begin{center}
+    \begin{minipage}{0.8\textwidth}
+      \raggedright
+    Let $D = \set{n \in \mathbb{N} \mid n \leq 9},
+        E=\set{x \in \mathbb{Q} \mid x \leq 9},$\\
+        $H = \set{x \in \mathbb{R} \mid x^2-2=0} \text{ and }
+        J = \set{x \in \mathbb{Q} \mid x^2-2=0}$
+    \end{minipage}
+  \end{center}
+  \begin{enumerate}[label=(\alph*)]
+    \item $D=\set{1, 2, 3, 4, 5, 6, 7, 8, 9}$.
+    \item $\frac{2}{3}, \frac{9}{4}, \text{ and } \frac{6}{5}$ are rational numbers
+    but are not natural numbers; so they are in $E$, but are \emph{not} in $D$..
+    \item $H=\set{\sqrt{2}, -\sqrt{2}}$.
+    \item $J = \emptyset$.
+  \end{enumerate}
+\end{document}

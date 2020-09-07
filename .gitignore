@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# LaTeX temp files
+*.synctex.gz
+*_temp.tex

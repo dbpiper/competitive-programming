@@ -1,0 +1,159 @@
+\documentclass[12pt]{article}
+\usepackage{enumitem, extsizes, amsfonts, braket, amsmath, ragged2e, physics, amsthm }
+
+\parindent=0pt
+\renewcommand\qedsymbol{Q.E.D.}
+
+\title{Chapter 1 Exercises}
+\author{David Piper}
+
+\begin{document}
+  \maketitle
+
+  \begin{enumerate}[label=1.\arabic*]
+    \item D and e are sets as they are in curly braces.
+    The other examples have some items just listed by themselves.
+    \item
+      \begin{enumerate}[label=(\alph*)]
+        \item $\set{x \in S \mid x \in \mathbb{N}}$
+        \item $\set{x \in S \mid x \geq 0}$
+        \item $\set{x \in S \mid x < 0}$
+        \item $\set{x \in S \mid \abs{x} > 1}$
+      \end{enumerate}
+    \item
+      \begin{enumerate}[label=(\alph*)]
+        \item $|A|=5$
+        \item $|B|=21$
+        \item $|C|=50$
+        \item $|D|=2$
+        \item $|E|=1$
+        \item $|E|=2$
+      \end{enumerate}
+    \item
+      \begin{enumerate}[label=(\alph*)]
+        \item $A = \set{-3, -2, -1, 0, 1, 2, 3, 4}$
+        \item $B = \set{-2, -1, 0, 1, 2}$
+        \item $C = \set{1,2,3,4,5,6,7,8,9}$
+        \item $D = \set{0, 1}$
+        \item $E = \emptyset$
+      \end{enumerate}
+    \item
+      \begin{enumerate}[label=(\alph*)]
+        \item $A = \set{x \in \mathbb{Z} \mid x < 0}$
+        \item $B = \set{x \in \mathbb{Z} \mid x^2 < 10}$
+        \item $C = \set{x \in \mathbb{Z} \mid 0 < x^2 < 5}$
+      \end{enumerate}
+    \item
+      \begin{enumerate}[label=(\alph*)]
+        \item $A = \set{2x + 1 \mid x \in \mathbb{Z}} 
+        = \set{\dots, -3, -1, 1, 3, 4\dots}$
+        \item $B = \set{4n \mid n \in \mathbb{Z}} 
+        = \set{\dots, -16, -8, -4, 0, 4, 8, 16, \dots}$
+        \item $C = \set{3q + 1 \mid q \in \mathbb{Z}} 
+        = \set{\dots, -7, -4, 1, 4, 7\dots}$
+      \end{enumerate}
+    \item
+      \begin{enumerate}[label=(\alph*)]
+        \item $A = \set{3x + 2 \mid x \in \mathbb{Z}}$
+        \item $B = \set{5x \mid x \in \mathbb{Z}}$
+        \item $C = \set{x^3 \mid x \in \mathbb{Z}}$
+      \end{enumerate}
+    \item
+      \begin{enumerate}[label=(\alph*)]
+        \item $A =\set{-4,-3,-2,2,3,4}$
+        \item $\frac{9}{4},\frac{10}{4}, \text{ and } \frac{21}{8}$
+        \item $C =\set{2, \sqrt{2}}$
+        \item $D =\set{2}$
+        \item $\abs{A}=6,\abs{C}=2, \text{ and } \abs{D}=1$
+      \end{enumerate}
+    \item $B=\set{5,7,8,10,13}$ so $C=\set{5,8}$
+    \item
+      \begin{enumerate}[label=(\alph*)]
+        \item $A=\set{1},B=\set{1}, \text{ and } C=\set{1, 2}$
+        \item $A=\set{1},B=\set{\set{1}, 2}, \text{ and } C=\set{\set{\set{1}, 2}}$
+        \item $A=\set{1},B=\set{\set{1}, 2}, \text{ and } C=\set{1, 2}$
+      \end{enumerate}
+    \item The interval $I$ can just be $\left(a, b\right)$ since the two intervals would be equal and thus subsets.
+    If we let $c = \dfrac{b + a}{2}$ then the interval $I$ would be centered at $c$; as it would be the center of the original
+    interval.
+    \item $A=B=C=D=E$
+    \item Skipping this because the problem is pretty straightforward and it's really
+    complicated to draw Venn diagrams in LaTeX (aka the benefits are not worth the effort).
+    \item
+      \begin{enumerate}[label=(\alph*)]
+        \item $\mathcal{P}\qty(A)=\set{\emptyset,\set{1},\set{2},\set{1,2}}
+        \text{ and } \abs{\mathcal{P}\qty(A)}=4$
+        \item $\mathcal{P}\qty(A)=\set{\emptyset,\set{\emptyset},\set{1},\set{\emptyset,1}, \\
+        \set{\set{a}}, \set{\emptyset, \set{a}}}, \set{1, \set{a}}, \set{\emptyset, 1, \set{a}}$ \\
+         and $\abs{\mathcal{P}\qty(A)}=8$
+      \end{enumerate}
+    \item $\mathcal{P}\qty(A)=\set{\emptyset, \set{0}, \set{\set{0}}, \set{\emptyset,
+      \set{0}}, \set{0, \set{0}}, \set{\emptyset, 0, \set{0}}}$
+    \item Find $\mathcal{P}\qty(\mathcal{P}\qty(\set{ 1 }))$ and its cardinality.
+      $\mathcal{P}\qty(\set{1})=\set{\emptyset,\set{1}}$ \\
+      $\mathcal{P}\qty(\mathcal{P}\qty(\set{1}))=\set{\emptyset, \set{\emptyset}, \set{\set{1}}, \set{\emptyset, \set{1}}}$ \\
+      $\abs{\mathcal{P}\qty(\mathcal{P}\qty(\set{1}))}=4$
+    \item $\mathcal{P}\qty(A)=\set{\emptyset, \set{0}, \set{\emptyset},
+    \set{\set{\emptyset}}, \set{0, \emptyset}, \set{\emptyset, \set{\emptyset}},\set{0, \set{\emptyset}},
+    \set{0, \emptyset, \set{\emptyset}}}$ \\
+    $\abs{\mathcal{P}\qty(A)}=8$
+    \item \begin{math}
+      A=\set{\emptyset, 0, \set{\emptyset}, \set{0}} \\
+      \mathcal{P}\qty(A)=\{ \emptyset, \set{\emptyset}, \set{0}, \set{\set{\emptyset}}, \set{\set{0}}, \set{\emptyset, 0},\\
+      \set{\emptyset, \set{\emptyset}}, \set{\emptyset, \set{0}}, \set{\set{0}, \set{\emptyset, 0, \set{\emptyset}}}, \\
+      \set{\emptyset, 0, \set{0}}, \set{\emptyset, 0, \set{0}, \set{\emptyset}} \} \\
+    \end{math}
+    // I am stopping here this is really tedious, I know I am missing a few sets, but it isn't
+    valuable enough to spend more time on. May come back with pen and paper.
+    \item
+      \begin{enumerate}[label=(\alph*)]
+        \item $S=\emptyset$
+        \item $S=\set{1}$
+        \item $\set{\set{1},\set{2},\set{3},\set{4},\set{5}}$
+        \item $\set{1,2,3,4,5}$
+      \end{enumerate}
+    \item
+      \begin{enumerate}[label=(\alph*)]
+        \item This statement could be either true or false; we don't have enough
+              information. Specifically, if the \emph{only} element of $A$ is $1$, then
+              it would be true. However if $A=\set{1, \set{1}}$ then it would be false.
+        \item
+              \begin{proof}
+              Since we know that $A \subset \mathcal{P}\qty(B) \subset C$ and that
+              $\abs{A}=2$ then we know that $\abs{\mathcal{P}\qty(B)}$ must be
+              less than $\abs{C}$; since a proper subset must have less elements than its proper
+              superset. So we have the following inequality $\abs{A} < \abs*{\mathcal{P}\qty(B)} < \abs*{C}$. 
+
+              Since the cardinality of a set must be a nonzero positive integer we know that the smallest possible
+              cardinality for $\mathcal{P}\qty(B)$ is $3$. However, we also know that the cardinality of a power set
+              $\mathcal{P}\qty(K)$ must be $2^{\abs*{K}}$ for some set $K$. Thus, the cardinality
+              of $\mathcal{P}\qty(B)$ cannot be $3$ (the next largest integer after $2$; which is $\abs*{A}$) because
+              $\log_2{3}$ is not an integer. However, it \emph{can} be $4$. So the smallest possible cardinality
+              of $\mathcal{P}\qty(B)=4$. Since $\abs*{\mathcal{P}\qty(B)} < \abs*{C}$ the smallest possible cardinality of
+              $C=5$.
+              \end{proof}
+        \item
+              \begin{proof}
+                We are given that $\abs*{B}=\abs*{A}+1$. We also know that the cardinality of a power set of
+                a set $K$ must be $2^{\abs*{K}}$. So in this case, $\abs*{\mathcal{P}\qty(A)}=2^{\abs*{A}}$ and
+                $\abs*{\mathcal{P}\qty(B)}=2^{\abs*{B}}=2^{\abs*{A+1}}$. From this equation we can observe that regardless
+                of the cardinality of $B$ it must always be at least $2^1$ or simply $2$ more than the cardinality of $A$.
+              \end{proof}
+        \item
+              \begin{proof}
+                We have four sets: $A, B, C, \text{ and } D$ which are subsets of $\set{1,2,3}$. Furthermore,
+                we know that $\abs*{A}=\abs*{B}=\abs*{C}=\abs*{D}=2$. There are only $3$ subsets of $\set{1,2,3}$ with
+                a cardinality of $2$, namely $\set{1,2},\set{1,3}, \text{ and } \set{2,3}$. Since we have four sets all of which
+                are subsets of $\set{1,2,3}$ with a cardinality of $2$ we must conclude that at least one of them are the same set.
+              \end{proof}
+      \end{enumerate}
+
+      \item One approach we can take to find a solution that satisfies all of the conditions is
+            attempting to minimize the sums of the elements in each set.
+            We know from (a) that $A$ must contain $1$, from (b) that $A$ and $C$ must contain $2$, and that $A$ must contain $3$ from (c).
+            So we know that the minimum sum of $A$ is $6$. If we choose $3$ to be in $C$ from (c) then the difference in the sums of $A$ and $C$ is exactly $1$
+            which satisfies (f). So we'd like to maintain that if we can. Observing that (d) requires $4$ to be in an even number of any of the sets we can
+            choose to add it to both $A$ and $C$, thus maintaining the difference of $1$ for their sums. If we then choose to satisfy (e) by adding $5$ to $B$ we 
+            have satisfied all of the conditions leaving us with $B=\set{1,5}$.
+  \end{enumerate}
+\end{document}
